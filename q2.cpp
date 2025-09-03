@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+#define S 100;
 class stack{
     char arr[S];
     int top;
@@ -23,6 +23,11 @@ class stack{
          cout<<"enter the string:\n'";
           cin>>arr[++top];
          }
+       }
+       void display(){
+           for(int i=top;i>=0;i--){
+               cout<<arr[i];
+           }
        }
     
 
